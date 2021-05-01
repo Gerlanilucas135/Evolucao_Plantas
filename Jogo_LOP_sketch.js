@@ -299,6 +299,9 @@ function trocafase(){
   
 
 function telamenu(){
+  nivel = 1;
+  vidas = 3;
+  pontos = 0;
   background(imgmenu2);
   textSize(48);
   fill(66, 37, 34);
@@ -307,6 +310,7 @@ function telamenu(){
   textAlign(CENTER);
   musinicio.play();
   musvitoria.stop();
+  musplay.stop();
   
   menuBotao(36,"Instrução", xMinBot1, xMaxBot1, 1);
   menuBotao(36, "Céditos", xMinBot2, xMaxBot2, 2);
@@ -375,7 +379,7 @@ function telacred(){
   textSize(13);
   fill(0);
   textFont(font);
-  text("FUNÇÃO: desing", 370, 395);
+  text("FUNÇÃO: design", 370, 395);
   musinicio.play();
 
 
@@ -648,6 +652,7 @@ function telaOver(){
   menuBotao(20, "Jogar novamente", 470, xMaxBot2+190, 3);
   vidas = 3;
   pontos = 0;
+  nivel = 1;
   clicked = false;
   musplay.stop();
   
@@ -667,9 +672,8 @@ function draw() {
     telaintro();
   }
   if(tela == 3){
-    
-    musinicio.stop();
     musplay.play();
+    musinicio.stop();
     if(nivel == 1){
       f1n1();
       
