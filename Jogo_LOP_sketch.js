@@ -449,7 +449,6 @@ function f1n2(){
   botaoescolha(("rgb(177,217,186)"),"Possuem raízes     profundas no solo", 525, 150, 505, 683, 290, 388, 1);
 
   clicked = false;
-
 }
 
 function f2n1(){
